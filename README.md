@@ -39,8 +39,11 @@ $( document ).ready(function() {
 
 ### Options - 
 
-1. tabs: "> ul > li > input"
-2. content: "> .yo-collpase"
+| Option        | Type           | Default  | Description |
+| ------------- |:-------------:| -----:| -----:|
+| tabs      | string | `> ul > li > input` | Tabs selector |
+| content      | string | `> .yo-collpase` | Content selector |
+
 
 
 ### License
