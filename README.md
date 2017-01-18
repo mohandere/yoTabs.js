@@ -33,7 +33,9 @@ Simple jquery Tabs with radio selection.
 ```jsvascript
 $( document ).ready(function() {
 	//init plugin
-    $('#tab-container').yoTabs();
+    $('#tab-container').yoTabs({
+     content: 'div.panel'
+    });
 });
 ```
 
