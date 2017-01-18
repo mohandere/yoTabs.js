@@ -1,5 +1,5 @@
 ## yoTabs.js
-Simple jquery Tabs with checkbox selection.
+Simple jquery Tabs with radio selection.
 
 
 ### Demo/Examples
@@ -41,10 +41,11 @@ $( document ).ready(function() {
 
 | Option        | Type           | Default  | Description |
 | ------------- |:-------------:| -----:| -----:|
-| tabs      | string | `> ul > li > input` | Tabs selector |
-| content      | string | `> .yo-collpase` | Content selector |
+| tabs      | string (html | jQuery selector)  | `> ul > li > input` | Allows you to select a node for tabs with checkbox|
+| content      | string (html | jQuery selector)  | `> .yo-collpase` | Allows you to select a node for collpasible/panel |
 
 
+`data-toggle="#tabs1-js"` is important for selecting right panel, where `#tabs1-js` is the HTML id of panel.
 
 ### License
 
