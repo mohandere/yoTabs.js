@@ -1,25 +1,14 @@
 /*
- *  jquery-boilerplate - v4.0.0
- *  A jump-start for jQuery plugins development.
- *  http://jqueryboilerplate.com
+ *  yoTabs.js - v4.0.0
+ *  Simple jquery Tabs with checkbox
+ *  https://mohandere.github.io/yoTabs.js/
  *
  *  Made by Mohan Dere
  *  Under MIT License
  */
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
 ;( function( $, window, document, undefined ) {
 
 	"use strict";
-
-		// undefined is used here as the undefined global variable in ECMAScript 3 is
-		// mutable (ie. it can be changed by someone else). undefined isn't really being
-		// passed in so we can ensure the value of it is truly undefined. In ES5, undefined
-		// can no longer be modified.
-
-		// window and document are passed through as local variable rather than global
-		// as this (slightly) quickens the resolution process and can be more efficiently
-		// minified (especially when both are regularly referenced in your plugin).
 
 		// Create the defaults once
 		var yoNameSpace = "yoTabs",
@@ -32,13 +21,13 @@
 		function YoTabs ( element, options ) {
 			this.element = element;
 
-			// jQuery has an extend method which merges the contents of two or
-			// more objects, storing the result in the first object. The first object
-			// is generally empty as we don't want to alter the default options for
-			// future instances of the plugin
+			// Store options in settings
 			this.settings = $.extend( {}, defaults, options );
+			//We don't want to alter the default options for future instances of the plugin
 			this._defaults = defaults;
 			this._name = yoNameSpace;
+
+			//initialize plugin
 			this.init();
 		}
 
@@ -46,17 +35,12 @@
 		$.extend( YoTabs.prototype, {
 			init: function() {
 
-				// Place initialization logic here
-				// You already have access to the DOM element and
-				// the options via the instance, e.g. this.element
-				// and this.settings
-				// you can add more functions like the one below and
-				// call them like the example bellow
-
+				// Cache elements
 				this.$element = $(this.element);
 				this.$tabs = this.$element.find(this.settings.tabs);
 				this.$content = this.$element.find(this.settings.content);
 
+				//if wrong html then through error
 				if(!this.$tabs.length){
 					try {
 					  throw new Error('yoTabs.js: invalid html for tabs.');
@@ -65,6 +49,7 @@
 					}
 				}
 
+				//Bind event listerners on tabs
 				this.bindTabClicks();
 
 				//select tab #1 first
