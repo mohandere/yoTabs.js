@@ -33,15 +33,21 @@ Simple jquery Tabs with radio selection.
 ```jsvascript
 $( document ).ready(function() {
 	//init plugin
-    $('#tab-container').yoTabs();
+    $('#tab-container').yoTabs({
+     content: 'div.panel'
+    });
 });
 ```
 
 ### Options -
 
-1. tabs: "> ul > li > input"
-2. content: "> .yo-collpase"
+| Option        | Type           | Default  | Description |
+| ------------- |:-------------:| -----:| -----:|
+| tabs      | string (html/jQuery selector)  | `> ul > li > input` | Allows you to select a node for tabs with checkbox|
+| content      | string (html/jQuery selector)  | `> .yo-collpase` | Allows you to select a node for collpasible/panel |
 
+
+`data-toggle="#tabs1-js"` is important for selecting right panel, where `#tabs1-js` is the HTML id of panel.
 
 ### License
 
