@@ -1,5 +1,5 @@
 /*
- *  yoTabs.js - v0.0.1
+ *  yoTabs.js - v1.0.0
  *  Simple jquery Tabs with checkbox
  *  https://mohandere.github.io/yoTabs.js/
  *
