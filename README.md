@@ -1,11 +1,11 @@
 ## yoTabs.js
-Simple jquery Tabs with checkbox selection.
+Simple jquery Tabs with radio selection.
 
 
 ### Demo/Examples
 [Js Fiddle Demo](https://jsfiddle.net/mohandere/tqv5gxbh/17/)
 
-### Usage - 
+### Usage -
 
 ##### The HTML
 ```html
@@ -37,7 +37,7 @@ $( document ).ready(function() {
 });
 ```
 
-### Options - 
+### Options -
 
 1. tabs: "> ul > li > input"
 2. content: "> .yo-collpase"
