@@ -3,7 +3,7 @@ Simple jquery Tabs with radio selection.
 
 
 ### Demo/Examples
-[Js Fiddle Demo](https://jsfiddle.net/mohandere/tqv5gxbh/17/)
+[Js Fiddle Demo](https://jsfiddle.net/mohandere/tqv5gxbh/18/)
 
 ### Usage -
 
